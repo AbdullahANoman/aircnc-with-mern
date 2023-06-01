@@ -28,16 +28,16 @@ const Rooms = () => {
       })
       .catch((error) => console.log(error));
   }, [category]);
-  console.log(rooms)
-  if (rooms.length==0) {
+  console.log(rooms);
+  if (rooms.length == 0) {
     return (
-    <div className="mt-12">
+      <div className="mt-12">
         <Heading
-        title={"No Rooms Available in this category"}
-        subtitle={"Please select other categories"}
-        center={true}
-      ></Heading>
-    </div>
+          title={"No Rooms Available in this category"}
+          subtitle={"Please select other categories"}
+          center={true}
+        ></Heading>
+      </div>
     );
   }
   return (
