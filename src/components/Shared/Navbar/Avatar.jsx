@@ -8,8 +8,7 @@ const Avatar = () => {
     <img
       src={user && user?.photoURL ? user?.photoURL : avatarImg}
       alt="profile"
-      width="30"
-      height="30"
+      width='40'
       className="rounded-full"
     />
   );
